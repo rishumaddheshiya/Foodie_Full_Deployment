@@ -1,0 +1,250 @@
+.navbar {
+    padding: 2px 15px;
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #49557E;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: sticky;
+
+}
+
+.navbar .logo {
+
+    width: 65px;
+    height:65px;
+}
+.menu-icon{
+
+    height:22px ;
+    width:25px;
+    color: #49557E;
+}
+.navbar .outerlogo {
+     display: flex;
+     color: rgb(247, 129, 3);
+     font-size: 40px;
+     font-weight: 600;
+     align-items: center;
+     justify-content: center;
+  
+     
+}
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    color: #49557E;
+    font-size: 18px;
+    
+
+}
+.navbar-menu a{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.navbar-menu .active {
+    background-color:#e7f8fa;
+    padding: 7px 10px ;
+    border-radius: 10px;
+   
+
+    border: 2px solid #829bf5;
+}
+
+.navbar-right {
+    display: flex;
+    color: #49557E;
+    align-items: center;
+justify-content: center;
+flex-direction: row;
+    gap: 40px;
+    font-size: 18px;
+    
+}
+.sarch-func{
+    color: #49557E;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navbar-search-icon{
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+
+}
+
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 22px;
+    min-height: 20px;
+    background-color: #FF4C24;
+    border-radius: 20px;
+    top: -16px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -18px;
+ 
+}
+
+.navbar-right button {
+    background: transparent;
+    font-size: 20px;
+  background-color: rgb(250, 154, 52);
+    border: 2px solid tomato;
+    padding: 8px 25px ;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar-right button:hover {
+    background: #f0852e;
+}
+
+.navbar-profile{
+    position: relative;
+
+}
+.navbar-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index:1 ;
+}
+.navbar-profile-dropdown li{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.navbar-profile-dropdown img{
+    width: 20px;
+    
+}
+.navbar-profile-dropdown li:hover{
+    color: #0aeb68;
+}
+.navbar-profile:hover .navbar-profile-dropdown{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+    list-style: none;
+   
+}
+.navbar-profile hr{
+    background-color: gray;
+    height: 1px;
+    border: none;
+}
+@media (max-width:1050px) {
+   
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+
+    .navbar-right img {
+        width: 22px;
+    }
+
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width:900px) {
+    .navbar .logo {
+        width: 120px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar-right button {
+        font-size: 15px;
+        padding: 7px 20px;
+    }
+        .navbar .outerlogo {
+            font-size: 35px;
+        }
+           .navbar .logo {
+    
+               width: 55px;
+               height: 55px;
+           }
+                         .menu-icon {
+                             height: 20px;
+                             width: 22px;
+                         }
+}
+@media (max-width:800px) {
+    .navbar-menu {
+            gap: 10px;
+            font-size: 14px;
+        }
+        .menu-icon{
+            height: 18px;
+            width:20px;
+        }
+        .navbar-search-icon .dot{
+            min-width: 16px;
+                min-height: 16px;
+                font-size: 12px;
+                top:-10px;
+                right: -11px;
+                border-radius: 50%;
+        }
+}
+
+@media (max-width:750px) {
+    .navbar-menu {
+        display: none;
+    }
+        .navbar .outerlogo {
+            font-size: 30px;
+        }
+                .navbar .logo {
+        
+                    width: 45px;
+                    height: 45px;
+                }
+                .navbar-search-icon{
+                    font-size: 16px;
+                }
+               
+                                 
+}

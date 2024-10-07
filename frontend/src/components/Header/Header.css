@@ -1,0 +1,89 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    margin-top: 0%;
+   background: url('..//../assets/foodiebg.jpg') no-repeat;
+    background-size:cover;
+    position: relative;
+border-radius: 10px;
+    z-index: 0;
+ box-shadow: 0 0 10px 0 #474749;
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 1vw;
+    width: 70%;
+    
+    left: 6vw;
+    animation: fadeIn 3s;
+
+}
+.header-contents h1{
+    
+    font-size: max(4.5vw, 22px);
+    font-weight: 500;
+    color:white;
+}
+h1 span{
+    font-weight:500;
+    color:rgb(100, 241, 85);
+    font-size: max(4.5vw,22px);
+}
+.header-contents h3{
+        font-weight: 600;
+            color: white;
+            font-family: 'Nunito', sans-serif;
+            font-size: max(2.5vw, 20px);
+}
+h3 span {font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: rgb(241, 107, 4);
+    font-size: max(2.5vw, 22px);
+}
+.header-contents p{
+color: white;
+    font-size: 1.5vw;
+    font-weight: 500;
+ font-family: 'Nunito', sans-serif;
+}
+.header-contents button{
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.8vw 2vw;
+    background: rgb(250, 154, 52);
+    border: 2px solid tomato;
+    font-size: max(1.3vw,13px);
+    border-radius: 50px;
+}
+@media (max-width:1050px) {
+    .header{
+        height: 38vw;
+    }
+    
+}
+@media(max-width:750px){
+   
+    .header-contents p{
+       display: none;
+    }
+    .header-contents {
+        margin-top: 5%;
+width: 100%;
+    }
+   
+
+}
+@media(max-width:500px) {
+.header-contents {
+        margin-top: 2%;
+}
+.header-contents h3{
+    font-size: 18px;
+}
+}

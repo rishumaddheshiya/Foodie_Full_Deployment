@@ -1,0 +1,181 @@
+.explore-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.explore-menu h1{
+    color: #262626;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+}
+.explore-menu-text{
+    max-width: 60%;
+    color: #808080;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.explore-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    gap: 30px;
+    text-align: center;
+    margin: 10px 0px;
+}
+#explore-menu-on-mind {
+    
+        margin-top :40px;
+        
+}
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+}
+.explore-menu-list-item img{
+    width: 8.5vw;
+    aspect-ratio: 1;
+    border: 5px solid tomato;
+    box-shadow: 0 0 10px 0 tomato;
+padding: 3px;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.explore-menu-list-item .active{
+    border: 5px solid rgb(5, 245, 97);
+    box-shadow: 0 0 10px 0 rgb(123, 245, 170);
+    
+}
+.explore-menu-list-item p{
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4vw,16px);
+    cursor: pointer;
+    
+}
+.explore-menu hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #E2E2E2;
+    border: none;
+  
+}
+#explore-menu-on-mind hr {
+    margin: 50px 0px;
+    height: 2px;
+    margin-top: 0px;
+    background-color: #E2E2E2;
+    border: none;
+}
+@media (max-width:1050px) {
+    .explore-menu-text{
+        max-width: 100%;
+        font-size: 14px;
+    }
+         #explore-menu-on-mind img {
+             width: 95%;
+             height: 95%;
+         }
+}
+@media (max-width:900px) {
+    .explore-menu-text {
+        max-width: 100%;
+        font-size: 14px;
+    }
+        .explore-menu-list-item img {
+            min-width: 70px;
+            padding: 2px;
+            border: 3px solid rgb(244, 110, 224);
+        }
+                .explore-menu-list-item .active {
+                    border: 3px solid rgb(5, 245, 97);
+        
+                }
+        .explore-menu-list {
+            gap: 20px;
+            margin: 5px 0px;
+        }
+                 #explore-menu-on-mind img {
+                     width: 90%;
+                     height: 90%;
+                 }
+                                   .explore-menu-list p {
+                                       font-size: 12px;
+                                    margin-top: 8px;
+                                   }
+}
+@media (max-width:800px) {
+    .explore-menu-list-item img {
+        min-width: 60px;
+    }
+          .explore-menu-list {
+              gap: 10px;
+          }
+                                   .explore-menu-list p {
+                                       font-size: 12px;
+                                    margin-top: 7px;
+                                   }
+                                  
+
+}
+@media (max-width:660px) {
+    .explore-menu-list-item img {
+        min-width: 50px;
+        box-shadow: 0 0 5px 0 tomato;
+    }
+
+    .explore-menu-list {
+        gap: 8px;
+    }
+
+    .explore-menu-list p {
+        font-size: 10px;
+        margin-top: 6px;
+    }
+
+
+}
+@media (max-width:520px) {
+    .explore-menu-list p {
+            font-size: 8px;
+            margin-top: 5px;
+        }
+        .explore-menu-list-item img {
+            min-width: 45px;
+        }
+    
+    }
+        @media (max-width:520px) {
+            .explore-menu-list p {
+                font-size: 7px;
+            }
+    
+            .explore-menu-list-item img {
+                min-width: 45px;
+            }
+                        .explore-menu-list {
+                            gap: 3px;
+                        }
+        .explore-menu {
+            gap: 10px;
+        }
+        }
+                         @media (max-width:420px) {
+                            .explore-menu-list p {
+                                    font-size: 6px;
+                                    margin-top: 4px;
+                                }
+                            .explore-menu-list-item img {
+                                    min-width: 40px;
+                                padding: 1.5px;
+                                    border: 2px solid rgb(244, 110, 224);
+                                }
+                                
+                                .explore-menu-list-item .active {
+                                    border: 2px solid rgb(5, 245, 97);
+                                
+                                }
+
+                         }
